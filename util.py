@@ -38,79 +38,6 @@ class DATA_LOADER(object):
                 self.read_matdataset(opt)
         self.index_in_epoch = 0
         self.epochs_completed = 0
-                
-    # not tested
-    def read_h5dataset(self, opt):
-        # read image feature
-        fid = h5py.File(opt.dataroot + "/" + opt.dataset + "/" + opt.image_embedding + ".hdf5", 'r')
-        feature = fid['feature'][()]
-        label = fid['label'][()] 
-        trainval_loc = fid['trainval_loc'][()] 
-        train_loc = fid['train_loc'][()]
-        val_unseen_loc = fid['val_unseen_loc'][()] 
-        test_seen_loc = fid['test_seen_loc'][()] 
-        test_unseen_loc = fid['test_unseen_loc'][()] 
-        fid.close()
-        # read attributes
-        fid = h5py.File(opt.dataroot + "/" + opt.dataset + "/" + opt.class_embedding + ".hdf5", 'r')
-        self.attribute = fid['attribute'][()]
-        fid.close()
-
-        if not opt.validation:
-            self.train_feature = feature[trainval_loc] 
-            self.train_label = label[trainval_loc] 
-            self.test_unseen_feature = feature[test_unseen_loc] 
-            self.test_unseen_label = label[test_unseen_loc] 
-            self.test_seen_feature = feature[test_seen_loc] 
-            self.test_seen_label = label[test_seen_loc] 
-        else:
-            self.train_feature = feature[train_loc] 
-            self.train_label = label[train_loc] 
-            self.test_unseen_feature = feature[val_unseen_loc] 
-            self.test_unseen_label = label[val_unseen_loc] 
-
-        self.seenclasses = np.unique(self.train_label)
-        self.unseenclasses = np.unique(self.test_unseen_label)
-        self.nclasses = self.seenclasses.size(0)
-
-    def read_matimagenet(self, opt):
-        if opt.preprocessing:
-            print('MinMaxScaler...')
-            scaler = preprocessing.MinMaxScaler()
-            matcontent = h5py.File(opt.dataroot + "/" + opt.dataset + "/" + opt.image_embedding + ".mat", 'r')
-            feature = scaler.fit_transform(np.array(matcontent['features']))
-            label = np.array(matcontent['labels']).astype(int).squeeze() - 1
-            feature_val = scaler.transform(np.array(matcontent['features_val']))
-            label_val = np.array(matcontent['labels_val']).astype(int).squeeze() - 1
-            matcontent.close()
-            matcontent = h5py.File('/BS/xian/work/data/imageNet21K/extract_res/res101_1crop_2hops_t.mat', 'r')
-            feature_unseen = scaler.transform(np.array(matcontent['features']))
-            label_unseen = np.array(matcontent['labels']).astype(int).squeeze() - 1
-            matcontent.close()
-        else:
-            matcontent = h5py.File(opt.dataroot + "/" + opt.dataset + "/" + opt.image_embedding + ".mat", 'r')
-            feature = np.array(matcontent['features'])
-            label = np.array(matcontent['labels']).astype(int).squeeze() - 1
-            feature_val = np.array(matcontent['features_val'])
-            label_val = np.array(matcontent['labels_val']).astype(int).squeeze() - 1
-            matcontent.close()
-
-
-        matcontent = sio.loadmat(opt.dataroot + "/" + opt.dataset + "/" + opt.class_embedding + ".mat")
-        self.attribute = torch.from_numpy(matcontent['w2v']).float()
-        self.train_feature = torch.from_numpy(feature).float()
-        self.train_label = torch.from_numpy(label).long() 
-        self.test_seen_feature = torch.from_numpy(feature_val).float()
-        self.test_seen_label = torch.from_numpy(label_val).long() 
-        self.test_unseen_feature = torch.from_numpy(feature_unseen).float()
-        self.test_unseen_label = torch.from_numpy(label_unseen).long() 
-        self.ntrain = self.train_feature.size()[0]
-        self.seenclasses = torch.from_numpy(np.unique(self.train_label.numpy()))
-        self.unseenclasses = torch.from_numpy(np.unique(self.test_unseen_label.numpy()))
-        self.train_class = torch.from_numpy(np.unique(self.train_label.numpy()))
-        self.ntrain_class = self.seenclasses.size(0)
-        self.ntest_class = self.unseenclasses.size(0)
-
 
     def read_matdataset(self, opt):
         matcontent = sio.loadmat(opt.dataroot + "/" + opt.dataset + "/" + opt.image_embedding + ".mat")
@@ -124,13 +51,7 @@ class DATA_LOADER(object):
         test_seen_loc = matcontent['test_seen_loc'].squeeze() - 1
         test_unseen_loc = matcontent['test_unseen_loc'].squeeze() - 1
         self.attribute = torch.from_numpy(matcontent['att'].T).float()
-        # self.attribute = torch.from_numpy(matcontent['original_att'].T).float()
-        # # mm1=self.attribute.norm(dim=1).max()
-        # # print(mm1)
-        # # mm2=self.attribute.norm(dim=1).min()
-        # # print(mm2)
-        # # mm=(mm1+mm2)/2
-        # self.attribute/=330
+
         if not opt.validation:
             if opt.preprocessing:
                 if opt.standardization:
@@ -146,7 +67,7 @@ class DATA_LOADER(object):
                 mx = self.train_feature.max()
                 self.train_feature.mul_(1/mx)
                 self.train_label = torch.from_numpy(label[trainval_loc]).long() 
-                self.test_unseen_feature = torch.where(torch.from_numpy(_test_unseen_feature).float()<0,torch.zeros(1),torch.from_numpy(_test_unseen_feature).float())
+                self.test_unseen_feature = torch.from_numpy(_test_unseen_feature).float()
                 self.test_unseen_feature.mul_(1/mx)
                 self.test_unseen_label = torch.from_numpy(label[test_unseen_loc]).long() 
                 self.test_seen_feature = torch.from_numpy(_test_seen_feature).float() 
@@ -189,19 +110,12 @@ class DATA_LOADER(object):
         iclass_label = self.train_label[idx]
         self.index_in_epoch += 1
         return iclass_feature[0:batch_size], iclass_label[0:batch_size], self.attribute[iclass_label[0:batch_size]] 
-    
-    def next_batch_change(self, batch_size):
-        idx = torch.randperm(self.ntrain)[0:batch_size]
-        batch_feature = self.train_feature[idx]
-        batch_label = self.train_label[idx]
-        batch_att = self.attribute[batch_label]
-        return batch_feature, batch_label, batch_att, idx.long()
+
     def next_batch(self, batch_size):
         idx = torch.randperm(self.ntrain)[0:batch_size]
         batch_feature = self.train_feature[idx]
         batch_label = self.train_label[idx]
-        batch_att = self.attribute[batch_label]
-        return batch_feature, batch_label, batch_att
+        return batch_feature, batch_label
     # select batch samples by randomly drawing batch_size classes    
     def next_batch_uniform_class(self, batch_size):
         batch_class = torch.LongTensor(batch_size)
