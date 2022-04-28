@@ -23,9 +23,9 @@ The meaning of these args is
 ## Citation
 If you recognize our work, please cite:  
 
-``@inproceedings{chen2022zero,  
+>@inproceedings{chen2022zero,  
   title={Zero-Shot Logit Adjustment},  
   author={Chen, Dubing and Shen, Yuming and Zhang, Haofeng and Philip H.S. Torr},  
   year={2022},  
   organization={IJCAI}  
-}``
+}
