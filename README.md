@@ -19,7 +19,7 @@ The meaning of these args is
 - <font style="background: grey;">--attSize</font>: size of semantic descriptors.  
 - <font style="background: grey;">--nz</font>: size of the Gaussian noise.  
 - <font style="background: grey;">--syn_num</font>: synthetic number for each unseen class.  
-- <font style="background: grey;">--ratio</font>: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
+- <font style="background: grey;">--ratio</font>$\colorbox{grey}{--reatio}$: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
 ## Citation
 If you recognize our work, please cite:  
 
