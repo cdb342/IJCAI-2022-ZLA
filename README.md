@@ -15,7 +15,7 @@ Please run the following commands to test on different datasets:
 
 The meaning of these args is
 
-- <font style="background: grey;">--dataset</font>: datasets, e.g: SUN.  
+- `--dataset`: datasets, e.g: SUN.  
 - <font style="background: grey;">--attSize</font>: size of semantic descriptors.  
 - <font style="background: grey;">--nz</font>: size of the Gaussian noise.  
 - <font style="background: gray;">--syn_num</font>: synthetic number for each unseen class.  
