@@ -224,6 +224,5 @@ for epoch in range(opt.nepoch):
     acu = cls_gzsl.acc_unseen.cpu().data.numpy()
     acs = cls_gzsl.acc_seen.cpu().data.numpy()
     ach = cls_gzsl.H.data.cpu().numpy()
-    best_epoch=cls_gzsl.best_epoch
-    print('unseen=%.4f, seen=%.4f, h=%.4f,best_epoch=%d' % (acu, acs, ach,best_epoch))
+    print('unseen=%.4f, seen=%.4f, h=%.4f' % (acu, acs, ach))
     netG.train()

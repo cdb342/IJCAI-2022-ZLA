@@ -41,13 +41,13 @@ class CLASSIFIER:
         self.epochs_completed = 0
         self.ntrain = self.train_X.size()[0]
         if generalized:
-            self.acc_seen, self.acc_unseen, self.H,self.best_epoch = self.fit_ZLA()
+            self.acc_seen, self.acc_unseen, self.H = self.fit_ZLA()
 
     def fit_ZLA(self):
         best_H = torch.zeros(1).cuda()
         best_seen = torch.zeros(1).cuda()
         best_unseen = torch.zeros(1).cuda()
-        best_epoch = torch.zeros(1)
+
         for epoch in range(self.nepoch):
             self.netP.train()
             for i in range(0, self.ntrain, self.batch_size):
@@ -75,8 +75,8 @@ class CLASSIFIER:
                 best_seen = acc_seen
                 best_unseen = acc_unseen
                 best_H = H
-                best_epoch=epoch
-        return best_seen, best_unseen, best_H,best_epoch
+
+        return best_seen, best_unseen, best_H
 
     def val_gzsl(self, test_X, test_label, target_classes):
         start = 0
