@@ -3,6 +3,7 @@
 - Python 3.7
 - Pytorch 1.0.1
 - numpy 1.17.3
+- <font color=gray size=72>color=gray</font>
 ## Datasets
 Please refer to [Xian et al. (CVPR2017)](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/zero-shot-learning-the-good-the-bad-and-the-ugly) for the datasets (AWA2/CUB/SUN/APY), and save correspongding data into directory <font style="background: grey;">./data/.</font> Please refer to [Han et al. (CVPR 2021)](https://github.com/Hanzy1996/CE-GZSL) for the 1024-D CUB semantics.
 ## Train and Test
