@@ -1,4 +1,4 @@
-# Codes for IJCAI 2022 Paper: Zero-Shot Logit Adjustment [arxiv](https://arxiv.org/abs/2204.11822).
+# Codes for IJCAI 2022 Paper: Zero-Shot Logit Adjustment [(arxiv)](https://arxiv.org/abs/2204.11822).
 ## Dependencies
 - Python 3.7
 - Pytorch 1.0.1
@@ -9,18 +9,18 @@ al. (CVPR 2021)](https://github.com/Hanzy1996/CE-GZSL) for the 1024-D CUB semant
 ## Train and Test
 Please run the following commands to test on different datasets:
 
-$ python ./WGAN+ZLAP.py --dataset AWA2 --attSize 85 --nz 85 --syn_num 10 --ratio 1000  
-$ python ./WGAN+ZLAP.py --dataset CUB --attSize 1024 --nz 1024  --syn_num 10 --ratio 30  
-$ python ./WGAN+ZLAP.py --dataset SUN --attSize 102 --nz 102 --syn_num 10 --ratio 60  
-$ python ./WGAN+ZLAP.py --dataset APY --attSize 64 --nz 64 --syn_num 10 --ratio 300  
+- $ python ./WGAN+ZLAP.py --dataset AWA2 --attSize 85 --nz 85 --syn_num 10 --ratio 1000  
+- $ python ./WGAN+ZLAP.py --dataset CUB --attSize 1024 --nz 1024  --syn_num 10 --ratio 30  
+- $ python ./WGAN+ZLAP.py --dataset SUN --attSize 102 --nz 102 --syn_num 10 --ratio 60  
+- $ python ./WGAN+ZLAP.py --dataset APY --attSize 64 --nz 64 --syn_num 10 --ratio 300  
 
 The meaning of these args is
 
---dataset: datasets, e.g: SUN.  
---attSize: size of semantic descriptors.  
---nz: size of the Gaussian noise.  
---syn_num: synthetic number for each unseen class.  
---ratio: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
+- --dataset: datasets, e.g: SUN.  
+- --attSize: size of semantic descriptors.  
+- --nz: size of the Gaussian noise.  
+- --syn_num: synthetic number for each unseen class.  
+- --ratio: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
 ## Citation
 If you recognize our work, please cite:  
 
