@@ -4,8 +4,7 @@
 - Pytorch 1.0.1
 - numpy 1.17.3
 ## Datasets
-Please refer to [Xian et al. (CVPR2017)](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/zero-shot-learning-the-good-the-bad-and-the-ugly) for the datasets (AWA2/CUB/SUN/APY), and save correspongding data into directory ./data/. Please refer to [Han et
-al. (CVPR 2021)](https://github.com/Hanzy1996/CE-GZSL) for the 1024-D CUB semantics.
+Please refer to [Xian et al. (CVPR2017)](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/zero-shot-learning-the-good-the-bad-and-the-ugly) for the datasets (AWA2/CUB/SUN/APY), and save correspongding data into directory <font style="background: grey;">./data/.</font> Please refer to [Han et al. (CVPR 2021)](https://github.com/Hanzy1996/CE-GZSL) for the 1024-D CUB semantics.
 ## Train and Test
 Please run the following commands to test on different datasets:
 
@@ -16,11 +15,11 @@ Please run the following commands to test on different datasets:
 
 The meaning of these args is
 
-- --dataset: datasets, e.g: SUN.  
-- --attSize: size of semantic descriptors.  
-- --nz: size of the Gaussian noise.  
-- --syn_num: synthetic number for each unseen class.  
-- --ratio: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
+- <font style="background: grey;">--dataset</font>: datasets, e.g: SUN.  
+- <font style="background: grey;">--attSize</font>: size of semantic descriptors.  
+- <font style="background: grey;">--nz</font>: size of the Gaussian noise.  
+- <font style="background: grey;">--syn_num</font>: synthetic number for each unseen class.  
+- <font style="background: grey;">--ratio</font>: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
 ## Citation
 If you recognize our work, please cite:  
 
