@@ -9,9 +9,9 @@ Please refer to [Xian et al. (CVPR2017)](https://www.mpi-inf.mpg.de/departments/
 Please run the following commands to test on different datasets:
 
 - $ python ./WGAN+ZLAP.py --dataset AWA2 --attSize 85 --nz 85 --syn_num 10 --ratio 1000  
-- $ python ./WGAN+ZLAP.py --dataset CUB --attSize 1024 --nz 1024 --syn_num 10 --ratio 30 --class_embedding sent
 - $ python ./WGAN+ZLAP.py --dataset SUN --attSize 102 --nz 102 --syn_num 10 --ratio 60  
 - $ python ./WGAN+ZLAP.py --dataset APY --attSize 64 --nz 64 --syn_num 10 --ratio 300  
+- - $ python ./WGAN+ZLAP.py --dataset CUB --attSize 1024 --nz 1024 --syn_num 10 --ratio 30 --class_embedding sent
 
 The meaning of these args is
 
