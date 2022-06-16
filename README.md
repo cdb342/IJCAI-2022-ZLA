@@ -29,7 +29,8 @@ The meaning of these args is
 - `--syn_num`: synthetic number for each unseen class.  
 - `--reatio`: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
 
-## Result
+## Results
+We test our method in WGAN and CE-GZSL, here's the result.
 <table>
 <thead>
   <tr>
