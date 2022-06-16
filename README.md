@@ -30,104 +30,94 @@ The meaning of these args is
 - `--reatio`: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
 
 ## Result
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-c3ow" rowspan="2">Method</th>
-    <th class="tg-c3ow" colspan="3">AWA2</th>
-    <th class="tg-baqh" colspan="3">CUB</th>
-    <th class="tg-baqh" colspan="3">SUN</th>
-    <th class="tg-baqh" colspan="3">APY</th>
+    <th rowspan="2">Method</th>
+    <th colspan="3">AWA2</th>
+    <th colspan="3">CUB</th>
+    <th colspan="3">SUN</th>
+    <th colspan="3">APY</th>
   </tr>
   <tr>
-    <th class="tg-c3ow">A^U^</th>
-    <th class="tg-c3ow">A^S^</th>
-    <th class="tg-c3ow">A^H^</th>
-    <th class="tg-baqh">A^U^</th>
-    <th class="tg-baqh">A^S^</th>
-    <th class="tg-baqh">A^H^</th>
-    <th class="tg-baqh">A^U^</th>
-    <th class="tg-baqh">A^S^</th>
-    <th class="tg-baqh">A^H^</th>
-    <th class="tg-baqh">A^U^</th>
-    <th class="tg-baqh">A^S^</th>
-    <th class="tg-baqh">A^H^</th>
+    <th>A&lt;sup&gt;U&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;S&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;H&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;U&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;S&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;H&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;U&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;S&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;H&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;U&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;S&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;H&lt;sup&gt;</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">f-CLSWGAN</td>
-    <td class="tg-0lax">57.7</td>
-    <td class="tg-0lax">71.0</td>
-    <td class="tg-0lax">63.7</td>
-    <td class="tg-0lax">59.4</td>
-    <td class="tg-0lax">63.3</td>
-    <td class="tg-0lax">61.3</td>
-    <td class="tg-0lax">46.2</td>
-    <td class="tg-0lax">35.2</td>
-    <td class="tg-0lax">40.0</td>
-    <td class="tg-0lax">32.5</td>
-    <td class="tg-0lax">57.2</td>
-    <td class="tg-0lax">41.5</td>
+    <td>f-CLSWGAN</td>
+    <td>57.7</td>
+    <td>71.0</td>
+    <td>63.7</td>
+    <td>59.4</td>
+    <td>63.3</td>
+    <td>61.3</td>
+    <td>46.2</td>
+    <td>35.2</td>
+    <td>40.0</td>
+    <td>32.5</td>
+    <td>57.2</td>
+    <td>41.5</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:bold">ZLAP</span>WGAN</td>
-    <td class="tg-1wig">65.4</td>
-    <td class="tg-1wig">82.2</td>
-    <td class="tg-1wig">72.8</td>
-    <td class="tg-1wig">73.0</td>
-    <td class="tg-0lax">64.8</td>
-    <td class="tg-1wig">68.7</td>
-    <td class="tg-0lax">50.1</td>
-    <td class="tg-1wig">38.0</td>
-    <td class="tg-1wig">43.2</td>
-    <td class="tg-1wig">40.2</td>
-    <td class="tg-0lax">53.8</td>
-    <td class="tg-0lax">46.0</td>
+    <td>ZLAPWGAN</td>
+    <td>65.4</td>
+    <td>82.2</td>
+    <td>72.8</td>
+    <td>73.0</td>
+    <td>64.8</td>
+    <td>68.7</td>
+    <td>50.1</td>
+    <td>38.0</td>
+    <td>43.2</td>
+    <td>40.2</td>
+    <td>53.8</td>
+    <td>46.0</td>
   </tr>
   <tr>
-    <td class="tg-0lax">CE-GZSL</td>
-    <td class="tg-0lax">65.3</td>
-    <td class="tg-0lax">75.0</td>
-    <td class="tg-0lax">69.9</td>
-    <td class="tg-0lax">66.9</td>
-    <td class="tg-0lax">65.9</td>
-    <td class="tg-0lax">66.4</td>
-    <td class="tg-1wig">52.4</td>
-    <td class="tg-0lax">34.3</td>
-    <td class="tg-0lax">41.5</td>
-    <td class="tg-0lax">28.3</td>
-    <td class="tg-1wig">65.8</td>
-    <td class="tg-0lax">39.6</td>
+    <td>CE-GZSL</td>
+    <td>65.3</td>
+    <td>75.0</td>
+    <td>69.9</td>
+    <td>66.9</td>
+    <td>65.9</td>
+    <td>66.4</td>
+    <td>52.4</td>
+    <td>34.3</td>
+    <td>41.5</td>
+    <td>28.3</td>
+    <td>65.8</td>
+    <td>39.6</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:bold">ZLAP</span>+CE-GZSL</td>
-    <td class="tg-0lax">64.8</td>
-    <td class="tg-0lax">80.9</td>
-    <td class="tg-0lax">72.0</td>
-    <td class="tg-0lax">71.2</td>
-    <td class="tg-1wig">66.2</td>
-    <td class="tg-0lax">68.6</td>
-    <td class="tg-0lax">50.9</td>
-    <td class="tg-0lax">35.7</td>
-    <td class="tg-0lax">42.0</td>
-    <td class="tg-0lax">38.3</td>
-    <td class="tg-0lax">60.9</td>
-    <td class="tg-1wig">47.0</td>
+    <td>ZLAP+CE-GZSL</td>
+    <td>64.8</td>
+    <td>80.9</td>
+    <td>72.0</td>
+    <td>71.2</td>
+    <td>66.2</td>
+    <td>68.6</td>
+    <td>50.9</td>
+    <td>35.7</td>
+    <td>42.0</td>
+    <td>38.3</td>
+    <td>60.9</td>
+    <td>47.0</td>
   </tr>
 </tbody>
 </table>
+
 ## Citation
 If you recognize our work, please cite:  
 
