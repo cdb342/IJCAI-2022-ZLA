@@ -87,7 +87,7 @@ We test our method in WGAN and CE-GZSL, and here are the results.
     <td>46.0</td>
   </tr>
   <tr>
-    <td>[CE-GZSL](https://openaccess.thecvf.com/content/CVPR2021/html/Han_Contrastive_Embedding_for_Generalized_Zero-Shot_Learning_CVPR_2021_paper.html)</td>
+    <td><a href="https://openaccess.thecvf.com/content/CVPR2021/html/Han_Contrastive_Embedding_for_Generalized_Zero-Shot_Learning_CVPR_2021_paper.html">CE-GZSL</a></td>
     <td>65.3</td>
     <td>75.0</td>
     <td>69.9</td>
