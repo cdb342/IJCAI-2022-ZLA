@@ -30,7 +30,7 @@ The meaning of these args is
 - `--reatio`: hyperparameter to control the seen-unseen prior (see Sec. 4.4 of the paper)
 
 ## Results
-We test our method in WGAN and CE-GZSL, here's the result.
+We test our method in WGAN and CE-GZSL, and here are the results.
 <table>
 <thead>
   <tr>
@@ -57,7 +57,7 @@ We test our method in WGAN and CE-GZSL, here's the result.
 </thead>
 <tbody>
   <tr>
-    <td>f-CLSWGAN</td>
+    <td>[f-CLSWGAN](https://openaccess.thecvf.com/content_cvpr_2018/html/Xian_Feature_Generating_Networks_CVPR_2018_paper.html)</td>
     <td>57.7</td>
     <td>71.0</td>
     <td>63.7</td>
@@ -87,7 +87,7 @@ We test our method in WGAN and CE-GZSL, here's the result.
     <td>46.0</td>
   </tr>
   <tr>
-    <td>CE-GZSL</td>
+    <td>[CE-GZSL](https://openaccess.thecvf.com/content/CVPR2021/html/Han_Contrastive_Embedding_for_Generalized_Zero-Shot_Learning_CVPR_2021_paper.html)</td>
     <td>65.3</td>
     <td>75.0</td>
     <td>69.9</td>
@@ -130,5 +130,5 @@ If you recognize our work, please cite:
     }
     
 ## Acknowledgment
-We acknowledge the prior works [CLSWGAN](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/feature-generating-networks-for-zero-shot-learning) and [CE-GZSL](https://github.com/Hanzy1996/CE-GZSL) for their contributions to our work.
+We acknowledge the prior works [f-CLSWGAN](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/feature-generating-networks-for-zero-shot-learning) and [CE-GZSL](https://github.com/Hanzy1996/CE-GZSL) for their contributions to our work.
 
