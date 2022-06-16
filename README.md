@@ -113,7 +113,7 @@ The meaning of these args is
     <td>42.0</td>
     <td>38.3</td>
     <td>60.9</td>
-    <td>47.0</td>
+    <td><b>47.0</td>
   </tr>
 </tbody>
 </table>
