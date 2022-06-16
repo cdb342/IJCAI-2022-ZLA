@@ -40,18 +40,18 @@ The meaning of these args is
     <th colspan="3">APY</th>
   </tr>
   <tr>
-    <th>A&lt;sup&gt;U&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;S&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;H&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;U&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;S&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;H&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;U&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;S&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;H&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;U&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;S&lt;sup&gt;</th>
-    <th>A&lt;sup&gt;H&lt;sup&gt;</th>
+    <th>A&lt;sup&gt;U&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;S&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;H&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;U&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;S&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;H&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;U&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;S&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;H&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;U&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;S&lt;/sup&gt;</th>
+    <th>A&lt;sup&gt;H&lt;/sup&gt;</th>
   </tr>
 </thead>
 <tbody>
