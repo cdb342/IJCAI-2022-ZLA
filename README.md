@@ -71,17 +71,17 @@ The meaning of these args is
     <td>41.5</td>
   </tr>
   <tr>
-    <td>ZLAPWGAN</td>
-    <td>65.4</td>
-    <td>82.2</td>
-    <td>72.8</td>
-    <td>73.0</td>
+    <td><b>ZLAP</b>WGAN</td>
+    <td><b>65.4</td>
+    <td><b>82.2</td>
+    <td><b>72.8</td>
+    <td><b>73.0</td>
     <td>64.8</td>
-    <td>68.7</td>
+    <td><b>68.7</td>
     <td>50.1</td>
-    <td>38.0</td>
-    <td>43.2</td>
-    <td>40.2</td>
+    <td><b>38.0</td>
+    <td><b>43.2</td>
+    <td><b>40.2</td>
     <td>53.8</td>
     <td>46.0</td>
   </tr>
@@ -93,20 +93,20 @@ The meaning of these args is
     <td>66.9</td>
     <td>65.9</td>
     <td>66.4</td>
-    <td>52.4</td>
+    <td><b>52.4</td>
     <td>34.3</td>
     <td>41.5</td>
     <td>28.3</td>
-    <td>65.8</td>
+    <td><b>65.8</td>
     <td>39.6</td>
   </tr>
   <tr>
-    <td>ZLAP+CE-GZSL</td>
+    <td><b>ZLAP</b>+CE-GZSL</td>
     <td>64.8</td>
     <td>80.9</td>
     <td>72.0</td>
     <td>71.2</td>
-    <td>66.2</td>
+    <td><b>66.2</td>
     <td>68.6</td>
     <td>50.9</td>
     <td>35.7</td>
