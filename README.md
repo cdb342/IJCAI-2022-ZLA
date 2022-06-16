@@ -57,7 +57,7 @@ We test our method in WGAN and CE-GZSL, and here are the results.
 </thead>
 <tbody>
   <tr>
-    <td>[f-CLSWGAN](https://openaccess.thecvf.com/content_cvpr_2018/html/Xian_Feature_Generating_Networks_CVPR_2018_paper.html)</td>
+    <td><a href="[http://www.baidu.com](https://openaccess.thecvf.com/content_cvpr_2018/html/Xian_Feature_Generating_Networks_CVPR_2018_paper.html)">f-CLSWGAN</a></td>
     <td>57.7</td>
     <td>71.0</td>
     <td>63.7</td>
