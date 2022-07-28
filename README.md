@@ -122,12 +122,19 @@ We test our method in WGAN and CE-GZSL, and here are the results.
 ## Citation
 If you recognize our work, please cite:  
 
-    @inproceedings{chen2022zero,  
-      title={Zero-Shot Logit Adjustment},  
-      author={Chen, Dubing and Shen, Yuming and Zhang, Haofeng and Philip H.S. Torr},  
-      year={2022},  
-      organization={IJCAI}  
-    }
+    @inproceedings{ijcai2022-114,
+        title     = {Zero-Shot Logit Adjustment},
+        author    = {Chen, Dubing and Shen, Yuming and Zhang, Haofeng and Torr, Philip H.S.},
+        booktitle = {Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence, {IJCAI-22}},
+        publisher = {International Joint Conferences on Artificial Intelligence Organization},
+        editor    = {Lud De Raedt},
+        pages     = {813--819},
+        year      = {2022},
+        month     = {7},
+        note      = {Main Track}
+        doi       = {10.24963/ijcai.2022/114},
+        url       = {https://doi.org/10.24963/ijcai.2022/114},
+        }
     
 ## Acknowledgment
 We acknowledge the prior works [f-CLSWGAN](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/feature-generating-networks-for-zero-shot-learning) and [CE-GZSL](https://github.com/Hanzy1996/CE-GZSL) for their contributions to our work.
