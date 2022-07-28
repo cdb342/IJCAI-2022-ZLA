@@ -8,7 +8,6 @@ This project contains the [pytorch](http://pytorch.org/) implemention for [*Zero
 ## Dependencies
 - Python 3.7
 - Pytorch = 1.0.1
-- NumPy = 1.17.3
 ## Prerequisites
 - Dataset: please download the [dataset](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/zero-shot-learning-the-good-the-bad-and-the-ugly), and change `--dataroot` to your local path.
 - Semantic: The semantics for AWA2, SUN, and APY are available in the dataset. please download the 1024-D [CUB semantic](https://github.com/Hanzy1996/CE-GZSL) and save it to the data path.
