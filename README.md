@@ -1,9 +1,9 @@
 # Zero-Shot Logit Adjustment
-[![arXiv](https://img.shields.io/badge/stat.ML-arXiv%3A2204.11822-B31B1B.svg)](https://www.ijcai.org/proceedings/2022/0114.pdf)
+[![arXiv](https://img.shields.io/badge/stat.ML-arXiv%3A2204.11822-B31B1B.svg)](https://arxiv.org/abs/2204.11822)
 [![Pytorch 1.8.1](https://img.shields.io/badge/pytorch-1.0.1-blue.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/cdb342/IJCAI-2022-ZLA)
 
-This project contains the [pytorch](http://pytorch.org/) implemention for [*Zero-Shot Logit Adjustment*](https://arxiv.org/abs/2204.11822).
+This project contains the [pytorch](http://pytorch.org/) implemention for [*Zero-Shot Logit Adjustment*](https://www.ijcai.org/proceedings/2022/0114.pdf).
 
 ## Dependencies
 - Python 3.7
